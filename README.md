@@ -73,8 +73,7 @@ Databasen skapas och uppdateras via **Entity Framework migrations**.
 1. Klona repot
 2. Öppna lösningen i Visual Studio
 3. Kör migrations om databasen inte finns:
-
-   4. Starta projektet
+4. Starta projektet
 5. Navigera till `/Movies` i webbläsaren
 
 ---
