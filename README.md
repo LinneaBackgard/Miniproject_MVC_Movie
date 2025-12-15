@@ -48,5 +48,51 @@ Applikationen är en enkel **Movie Web Application** där användaren kan skapa,
 
 Projektet använder **SQL Server LocalDB** för utveckling.
 
-Connection string (utveckling):
+Connection string (utveckling): Server=(localdb)\MSSQLLocalDB;Trusted_Connection=True;
+
+ℹ️ Detta är en **lokal utvecklingsdatabas** som endast finns på den egna datorn.  
+Den innehåller inga lösenord och inga externa servrar och är därför säker att ha i ett publikt GitHub-repo.
+
+Databasen skapas och uppdateras via **Entity Framework migrations**.
+
+---
+
+## ⭐ Rating-fält
+
+- Rating är av typen `decimal`
+- Tillåtna värden: **0 – 10**
+- Precision: **1 decimal** (t.ex. 7,5 eller 8,8)
+- Validering sker både:
+  - i modellen (DataAnnotations)
+  - i databasen (HasPrecision)
+
+---
+
+## ▶️ Så kör du projektet
+
+1. Klona repot
+2. Öppna lösningen i Visual Studio
+3. Kör migrations om databasen inte finns:
+
+   4. Starta projektet
+5. Navigera till `/Movies` i webbläsaren
+
+---
+
+## 📌 Status
+
+Detta är ett **utbildningsprojekt / mini-projekt**.
+
+Fokus ligger på:
+- förståelse för MVC-arkitektur
+- Entity Framework Core
+- Repository-pattern
+- grundläggande validering
+- tydlig och strukturerad kod
+
+---
+
+## 👤 Författare
+
+Projektet är skapat som en del av kursarbete i **C# / ASP.NET Core MVC**.
 
